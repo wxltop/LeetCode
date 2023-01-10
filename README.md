@@ -12,7 +12,7 @@
  |[876.链表的中间节点](https://leetcode.cn/problems/middle-of-the-linked-list/)|:star2:|`链表`<br/>`快慢指针`|[1.双指针](https://leetcode.cn/submissions/detail/393788629/)<br/>[2.快慢指针](https://leetcode.cn/submissions/detail/393795468/)|$O(n)$<br/>$O(n/2)$ |$O(1)$<br/>$O(1)$ ||双指针的思路是用一个指针一直往后遍历，另一个指针始终指向中间节点；快慢指针的思路是快指针每次跑两个节点，慢指针每次跑一个节点，所以慢指针始终处于中间位置|
 |[141.环形链表](https://leetcode.cn/problems/linked-list-cycle/)|:star2:|`链表`<br/>`快慢指针`|[1.快慢指针](https://leetcode.cn/submissions/detail/394187671/)<br/>[2.哈希表](https://leetcode.cn/submissions/detail/394218224/)|$O(n)$<br/>$O(n)$ |$O(1)$<br/>$O(n)$ ||**可证明：慢指针进入环后第一圈内必定与快指针相遇；快指针速度为慢指针的n倍，二者相遇时间不随n增大而减少**|
 |[142.环形链表II](https://leetcode.cn/problems/linked-list-cycle-ii/)|:star2::star2:|`链表`<br/>`快慢指针`|[1.快慢指针](https://leetcode.cn/submissions/detail/394251424/)<br/>[2.哈希表](https://leetcode.cn/submissions/detail/394219009/)|$O(n)$<br/>$O(n)$ |$O(1)$<br/>$O(n)$ ||快慢指针思想是利用快指针和慢指针可以计算出慢指针距离环的入口的长度，设为c，设链表距离环入口长度为a，可以得到a=(n-1)L+c，也就是说重新定义一个指针从链表头开始走，慢指针继续走下去，二者一定会相遇且第一次相遇点在环的入口处。|
-
+|[160.相交链表](https://leetcode.cn/problems/intersection-of-two-linked-lists/)|:star2:|`链表`<br/>`快慢指针`|[1.快慢指针](https://leetcode.cn/submissions/detail/394251424/)<br/>[2.哈希表](https://leetcode.cn/submissions/detail/394282945/)|$O(n)$<br/>$O(n+m)$ |$O(1)$<br/>$O(n+m)$ |||
 
 
 # :four_leaf_clover: 二叉树
