@@ -13,6 +13,7 @@
 |[141.环形链表](https://leetcode.cn/problems/linked-list-cycle/)|:star2:|`链表`<br/>`快慢指针`|[1.快慢指针](https://leetcode.cn/submissions/detail/394187671/)<br/>[2.哈希表](https://leetcode.cn/submissions/detail/394218224/)|$O(n)$<br/>$O(n)$ |$O(1)$<br/>$O(n)$ ||**可证明：慢指针进入环后第一圈内必定与快指针相遇；快指针速度为慢指针的n倍，二者相遇时间不随n增大而减少**|
 |[142.环形链表II](https://leetcode.cn/problems/linked-list-cycle-ii/)|:star2::star2:|`链表`<br/>`快慢指针`|[1.快慢指针](https://leetcode.cn/submissions/detail/394251424/)<br/>[2.哈希表](https://leetcode.cn/submissions/detail/394219009/)|$O(n)$<br/>$O(n)$ |$O(1)$<br/>$O(n)$ ||快慢指针思想是利用快指针和慢指针可以计算出慢指针距离环的入口的长度，设为c，设链表距离环入口长度为a，可以得到a=(n-1)L+c，也就是说重新定义一个指针从链表头开始走，慢指针继续走下去，二者一定会相遇且第一次相遇点在环的入口处。|
 |[160.相交链表](https://leetcode.cn/problems/intersection-of-two-linked-lists/)|:star2:|`链表`|[1.双指针](https://leetcode.cn/submissions/detail/394490567/)<br/>[2.哈希表](https://leetcode.cn/submissions/detail/394282945/)|$O(n-m+a)$<br/>$O(n+m)$ | $O(n)$<br/>$O(1)$||双指针方法较巧妙，先从各自头部开始，短链表结束后从长链表出发，长链表走完后从短链表出发，此时二者剩余步长相等，接下来每一步都判断一下是否相等即可。简化代码可以考虑到，结束程序的时候是二者相等，不论是None还是相交|
+|[206.反转链表](https://leetcode.cn/problems/reverse-linked-list/)|:star2:|`链表`|[1.栈](https://leetcode.cn/submissions/detail/394901007/)<br/>[2.哈希表](https://leetcode.cn/submissions/detail/394282945/)|$O(2n)$<br/>$O(n+m)$ | $O(n)$<br/>$O(1)$|||
 
 
 # :four_leaf_clover: 二叉树
