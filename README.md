@@ -18,6 +18,9 @@
 |[24.两两交换链表中的节点](https://leetcode.cn/problems/swap-nodes-in-pairs/)|:star2::star2:|`链表`|[1.多指针](https://leetcode.cn/submissions/detail/396174197/)<br/>[2.递归](https://leetcode.cn/submissions/detail/396508688/)|$O(n)$<br/>$O(n)$ | $O(1)$<br/>$O(n)$|||
 |[25.K个一组翻转链表](https://leetcode.cn/problems/reverse-nodes-in-k-group/)|:star2::star2::star2:|`链表`|[1.多指针](https://leetcode.cn/submissions/detail/396587930/)<br/>|$O(n)$ | $O(1)$||此题要先知道接下来是否有k个节点才决定是否翻转。如果不提前计数，最终还需要还原不足的k个节点。一种方式是翻转前统计整个链表节点数，决定需要翻转的子链表数目；一种方式是每次翻转子链表前统计是否够k个。|
 |[328.奇偶链表](https://leetcode.cn/problems/odd-even-linked-list/)|:star2::star2:|`链表`|[1.多指针](https://leetcode.cn/submissions/detail/396590304/)<br/>|$O(n)$ | $O(1)$||用一个计数器判断当前是奇数还是偶数，奇数就将当前节点连接到奇数链表上，偶数就将当前节点连接到偶数链表上。|
+|[203.移除链表元素](https://leetcode.cn/problems/remove-linked-list-elements/)|:star2:|`链表`|[1.多指针](https://leetcode.cn/submissions/detail/396591269/)<br/>|$O(n)$ | $O(1)$|||
+
+
 
 # :four_leaf_clover: 二叉树
 |**Problem**|**Difficulty**|**Tags***|**Methods****|**Time/Space**|**FM**|**Note**|
