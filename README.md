@@ -19,7 +19,8 @@
 |[25.K个一组翻转链表](https://leetcode.cn/problems/reverse-nodes-in-k-group/)|:star2::star2::star2:|`链表`|[1.多指针](https://leetcode.cn/submissions/detail/396587930/)<br/>|$O(n)$ | $O(1)$||此题要先知道接下来是否有k个节点才决定是否翻转。如果不提前计数，最终还需要还原不足的k个节点。一种方式是翻转前统计整个链表节点数，决定需要翻转的子链表数目；一种方式是每次翻转子链表前统计是否够k个。|
 |[328.奇偶链表](https://leetcode.cn/problems/odd-even-linked-list/)|:star2::star2:|`链表`|[1.多指针](https://leetcode.cn/submissions/detail/396590304/)<br/>|$O(n)$ | $O(1)$||用一个计数器判断当前是奇数还是偶数，奇数就将当前节点连接到奇数链表上，偶数就将当前节点连接到偶数链表上。|
 |[203.移除链表元素](https://leetcode.cn/problems/remove-linked-list-elements/)|:star2:|`链表`|[1.多指针](https://leetcode.cn/submissions/detail/396591269/)<br/>|$O(n)$ | $O(1)$|||
-
+|[82.删除排序链表中的重复元素ii](https://leetcode.cn/problems/remove-duplicates-from-sorted-list-ii/)|:star2::star2:|`链表`|[1.多指针](https://leetcode.cn/submissions/detail/396648104/)<br/>|$O(n)$ | $O(1)$|||
+|[148.排序链表](https://leetcode.cn/problems/sort-list/)|:star2::star2:|`链表`|[1.多指针](https://leetcode.cn/submissions/detail/396651065/)<br/>|$O(n^2)$ | $O(1)$||这种方法无法通过所有案例，最后几个超时|
 
 
 # :four_leaf_clover: 二叉树
