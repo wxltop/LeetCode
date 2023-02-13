@@ -21,7 +21,8 @@
 |[203.移除链表元素](https://leetcode.cn/problems/remove-linked-list-elements/)|:star2:|`链表`|[1.多指针](https://leetcode.cn/submissions/detail/396591269/)<br/>|$O(n)$ | $O(1)$|||
 |[82.删除排序链表中的重复元素ii](https://leetcode.cn/problems/remove-duplicates-from-sorted-list-ii/)|:star2::star2:|`链表`|[1.多指针](https://leetcode.cn/submissions/detail/396648104/)<br/>|$O(n)$ | $O(1)$|||
 |[148.排序链表](https://leetcode.cn/problems/sort-list/)|:star2::star2:|`链表`|[1.多指针](https://leetcode.cn/submissions/detail/396651065/)<br/>|$O(n^2)$ | $O(1)$||这种方法无法通过所有案例，最后几个超时|
-
+|[剑指 Offer 22. 链表中倒数第k个节点](https://leetcode.cn/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/)|:star2:|`链表`|[1.双指针](https://leetcode.cn/submissions/detail/402038306/)<br/>|$O(n)$ | $O(1)$||可以使用双指针，快指针提前走K个，然后再一起走，快指针到达链表尾部时，返回慢指针即可|
+|[剑指 Offer II 078. 合并排序链表](https://leetcode.cn/problems/vvXgSW/)|:star2::star2::star2:|`链表`|[]()<br/>|$O(n^2)$ | $O(1)$|||
 
 # :four_leaf_clover: 二叉树
 |**Problem**|**Difficulty**|**Tags***|**Methods****|**Time/Space**|**FM**|**Note**|
