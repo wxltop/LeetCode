@@ -22,12 +22,13 @@
 |[82.删除排序链表中的重复元素ii](https://leetcode.cn/problems/remove-duplicates-from-sorted-list-ii/)|:star2::star2:|`链表`|[1.多指针](https://leetcode.cn/submissions/detail/396648104/)<br/>|$O(n)$ | $O(1)$|||
 |[148.排序链表](https://leetcode.cn/problems/sort-list/)|:star2::star2:|`链表`|[1.多指针](https://leetcode.cn/submissions/detail/396651065/)<br/>|$O(n^2)$ | $O(1)$||这种方法无法通过所有案例，最后几个超时|
 |[剑指 Offer 22. 链表中倒数第k个节点](https://leetcode.cn/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/)|:star2:|`链表`|[1.双指针](https://leetcode.cn/submissions/detail/402038306/)<br/>|$O(n)$ | $O(1)$||可以使用双指针，快指针提前走K个，然后再一起走，快指针到达链表尾部时，返回慢指针即可|
-|[剑指 Offer II 078. 合并排序链表](https://leetcode.cn/problems/vvXgSW/)|:star2::star2::star2:|`链表`|[]()<br/>|$O(n^2)$ | $O(1)$|||
+
 
 # :four_leaf_clover: 二叉树
 |**Problem**|**Difficulty**|**Tags***|**Methods****|**Time/Space**|**FM**|**Note**|
 | --------- | :----------: |---------| ---------- | :----------: | :--: | ------ |
-|[21.合并两个有序链表]()|:star2:|`链表`|<br />||:white_check_mark:||
+|[144.二叉树前序遍历](https://leetcode.cn/problems/binary-tree-preorder-traversal/)|:star2:|`二叉树`|[1.递归](https://leetcode.cn/submissions/detail/402392301/)<br/>[2.循环](https://leetcode.cn/submissions/detail/402390893/)|$O(n)$<br/>$O(n)$ | $O(logn)$<br/>$O(1)$|||
+|[144.二叉树中序遍历](https://leetcode.cn/problems/binary-tree-inorder-traversal/submissions/)|:star2:|`二叉树`|[1.递归]()<br/>[2.循环]()|$O(n)$<br/>$O(n)$ | $O(logn)$<br/>$O(1)$|||
 
 
 # :deciduous_tree: 动态规划
