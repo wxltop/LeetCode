@@ -27,14 +27,15 @@
 # :four_leaf_clover: 二叉树
 |**Problem**|**Difficulty**|**Tags***|**Methods****|**Time/Space**|**FM**|**Note**|
 | --------- | :----------: |---------| ---------- | :----------: | :--: | ------ |
-|[144.二叉树前序遍历](https://leetcode.cn/problems/binary-tree-preorder-traversal/)|:star2:|`二叉树`|[1.递归](https://leetcode.cn/submissions/detail/402392301/)<br/>[2.循环](https://leetcode.cn/submissions/detail/402390893/)|$O(n)$<br/>$O(n)$ | $O(logn)$<br/>$O(1)$|||
-|[144.二叉树中序遍历](https://leetcode.cn/problems/binary-tree-inorder-traversal/submissions/)|:star2:|`二叉树`|[1.递归]()<br/>[2.循环]()|$O(n)$<br/>$O(n)$ | $O(logn)$<br/>$O(1)$|||
-
+|[144.二叉树前序遍历](https://leetcode.cn/problems/binary-tree-preorder-traversal/)|:star2:|`二叉树`|[1.递归](https://leetcode.cn/submissions/detail/402392301/)<br/>[2.循环](https://leetcode.cn/submissions/detail/402390893/)|$O(n)$<br/>$O(n)$ | $O(logn)$<br/>$O(1)$||前序先访问根节点，故不需要循环走到底入栈节点。只需每一步先输出根节点的值，然后判断右节点是否为空，入栈，判断左节点是否为空，入栈，进入下一次循环。|
+|[144.二叉树中序遍历](https://leetcode.cn/problems/binary-tree-inorder-traversal/submissions/)|:star2:|`二叉树`|[1.递归](https://leetcode.cn/submissions/detail/402396554/)<br/>[2.循环](https://leetcode.cn/submissions/detail/402710303/)|$O(n)$<br/>$O(n)$ | $O(logn)$<br/>$O(1)$||中序根节点不会马上访问，所以需要入栈，先访问左节点，用一个指针cur指向左节点，循环一直走到其最左边，历经节点入栈，到底后开始出栈，若右节点不为空，修改cur指向右节点。需要注意的是cur不能指向已经入栈过的节点，避免死循环|
+|[104. 二叉树的最大深度](https://leetcode.cn/problems/maximum-depth-of-binary-tree/)|:star2:|`二叉树`|[1.递归](https://leetcode.cn/submissions/detail/402728358/)<br/>[2.数层数](https://leetcode.cn/submissions/detail/402733596/)|$O(n)$<br/>$O(n)$ | $O(height)$<br/>$O(n)$||数层数法指的是每走一层，将该层所有非空节点存入一个列表，随后将该列表存入总列表，每一次从总列表的最后一个列表中访问内部所有节点是否有左右节点，若有，新建一个列表（新的一层），否则返回总列表的项数（即层数）|
+|[]()|:star2:|`二叉树`|[1.]()<br/>[2.]()|$O()$<br/>$O()$ | $O()$<br/>$O()$|||
 
 # :deciduous_tree: 动态规划
 |**Problem**|**Difficulty**|**Tags***|**Methods****|**Time/Space**|**FM**|**Note**|
 | --------- | :----------: |---------| ---------- | :----------: | :--: | ------ |
-|[21.合并两个有序链表]()|:star2:|`链表`|<br />||:white_check_mark:||
+|[]()|:star2:|`二叉树`|[1.]()<br/>[2.]()|$O()$<br/>$O()$ | $O()$<br/>$O()$|||
 
 
 # :evergreen_tree: 贪心
