@@ -32,6 +32,8 @@
 |[104. 二叉树的最大深度](https://leetcode.cn/problems/maximum-depth-of-binary-tree/)|:star2:|`二叉树`|[1.递归](https://leetcode.cn/submissions/detail/402728358/)<br/>[2.数层数](https://leetcode.cn/submissions/detail/402733596/) <br/>[3.广度优先](https://leetcode.cn/submissions/detail/403363182/)|$O(n)$<br/>$O(n)$ <br/>$O(n)$| $O(height)$<br/>$O(n)$ <br/>$O(n)$||数层数法指的是每走一层，将该层所有非空节点存入一个列表，随后将该列表存入总列表，每一次从总列表的最后一个列表中访问内部所有节点是否有左右节点，若有，新建一个列表（新的一层），否则返回总列表的项数（即层数）。3.广度优先：思路和数层数法类似，只是每次将前一层的节点都pop掉，降低了空间复杂度为O(n)的概率|
 |[543.二叉树的直径](https://leetcode.cn/problems/diameter-of-binary-tree/)|:star2:|`二叉树`|[1.递归](https://leetcode.cn/submissions/detail/403381116/)<br/>[2.]()|$O(n)$<br/>$O()$ | $O(n)$<br/>$O()$||递归方法再好好复习一下|
 |[1008.前序遍历构造二叉搜索树](https://leetcode.cn/problems/construct-binary-search-tree-from-preorder-traversal/)|:star2::star2:|`二叉树`|[1.递归](https://leetcode.cn/submissions/detail/408316011/)<br/>[2.]()|$O(n)$<br/>$O()$ | $O(n)$<br/>$O()$||搜索树即左子树所有值严格小于根，右子树所有值严格大于根节点。前序遍历序列第一个值为根，所有小于该值的在左子树，大于该值的在右子树，根据这一递归思路可以求解。|
+|[105. 从前序与中序遍历序列构造二叉树](https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)|:star2::star2:|`二叉树`|[1.递归](https://leetcode.cn/submissions/detail/409808626/)<br/>[2.]()|$O(n)$<br/>$O()$ | $O(n)$<br/>$O()$|||
+
 
 # :deciduous_tree: 动态规划
 |**Problem**|**Difficulty**|**Tags***|**Methods****|**Time/Space**|**FM**|**Note**|
