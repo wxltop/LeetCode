@@ -38,7 +38,8 @@
 # :deciduous_tree: 动态规划
 |**Problem**|**Difficulty**|**Tags***|**Methods****|**Time**|**Space**|**FM**|**Note**|
 | --------- | :----------: |---------| ---------- | :-----: | :-----: | :--: | ------ |
-|[]()|:star2:|`二叉树`|[1.]()<br/>[2.]()|$O()$<br/>$O()$ | $O()$<br/>$O()$|||
+|[5.最长回文串](https://leetcode.cn/problems/longest-palindromic-substring/)|:star2::star2:|`动归`|[1.动归](https://leetcode.cn/submissions/detail/439847008/)<br/>[2.中心扩散](https://leetcode.cn/submissions/detail/441003034/)|$O(n^2)$<br/>$O(n^2)$ | $O(n^2)$<br/>$O(n)$||动归的思路是自底向上；中心扩散主要看实现方式，我自己的实现方式是用了递归，递归栈深度为n，官方使用循环实现，所以空间复杂度为 $O(1)$,而且我自己实现的时候check 函数返回的是子串，最好返回的是索引，如果是列表那么空间复杂度将很大，子串虽然不会复制一份，但是习惯要养好|
+
 
 
 # :evergreen_tree: 贪心
