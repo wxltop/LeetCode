@@ -42,6 +42,8 @@
 
 
 
+
+
 # :evergreen_tree: 贪心
 |**Problem**|**Difficulty**|**Tags***|**Methods****|**Time**|**Space**|**FM**|**Note**|
 | --------- | :----------: |---------| ---------- | :-----: | :-----: | :--: | ------ |
@@ -62,3 +64,4 @@
 |[216.组合总和3](https://leetcode.cn/problems/combination-sum-iii/)|:star2::star2:|`回溯`|[1.回溯](https://leetcode.cn/submissions/detail/432489416/)<br/> [2.选与不选](https://leetcode.cn/submissions/detail/432938001/)|$O(n \cdot 2^n)$<br/> $O(k*(n k))$| $O(n)$<br/> $O(n)$||本题的框架和前面题目的框架一样，两种方法：递归内有循环、递归内无循环，有循环的思路是同一层中各个元素的选择，无循环的思路是一个元素选还是不选，时间复杂度上，方法一的时间复杂度为 $O(n*2^n)$ 这里的n是集合的大小。方法2的时间复杂度为组合+存入时间，组合是从n个数中选择k个。|
 |[17.电话号码字母组合](https://leetcode.cn/problems/letter-combinations-of-a-phone-number/)|:star2::star2:|`回溯`|[1.回溯](https://leetcode.cn/submissions/detail/433520394/)<br/> [2.选与不选](https://leetcode.cn/submissions/detail/433219717/) <br/>[3.队列](https://leetcode.cn/submissions/detail/433933131/)|$O(3^M*4^N)$<br/> $O(3^M*4^N)$| $O(n)$<br/> $O(n)$||本题和前面几题没有太大区别，前两种方法都是基于回溯实现的, 队列的想法也很好，先将第一个数对应的所有字母入队，第二个数时，将第一个数的所有字符出队，并与第二个数的所有字母拼接再入队，以此类推。空间复杂度和按键数有关，比如三个按键，每个按键都是3个字母，则为27. 时间复杂度一样如此|
 |[131.分割子串](https://leetcode.cn/problems/palindrome-partitioning/)|:star2::star2:|`回溯`|[1.回溯](https://leetcode.cn/submissions/detail/439102324/)<br/> [2.回溯+动归](https://leetcode.cn/submissions/detail/439170960/) <br/> [3.回溯+记忆搜索](https://leetcode.cn/submissions/detail/439375945/)| $O(n*2^n*n)$ <br/> $O(n*2^n)$ <br/> $O(n*2^n)$ | $O(n) <br/> $O(2^n)$ <br/> $O(2^n)$||本题转化为回溯的思路很重要，最初我自己的思路是对切割的位置回溯，但是没有顾及切割的位置，想着是切割位置可以在任何地方，所以问题变得非常复杂，参考结题思路后，将分割子串看作一系列按顺序切割的问题：解法一中，从左往右，先切第一个子串出来，如果不是回文（双指针法判断），切割位置右移直到是回文子串为止，切割完第一个，接着切割第二个，然后回溯第一个切割的位置。如果切割位置到了字符串末尾，结束。时间复杂度和空间复杂度参考官方分析,空间复杂度不考虑结果列表的话，主要和递归深度有关，递归深度空间复杂度和字符串长度以及含有的最长回文子串有关，所以复杂度为 $O(n)$ 。方法2的思路是，判断字符串是否为回文子串的过程用双指针会有重复计算（字符串之间有重复），然后使用动归来解决。空间复杂度和动归的helper有关，即为 $O(n^2)$ . 方法3的记忆化搜索其实是用一个修饰器修饰一个函数，将该函数的结果存储起来，当输入的参数相同时，直接返回缓存的结果，类似动归|
+|[93.复原ip地址](https://leetcode.cn/problems/restore-ip-addresses/)|:star2::star2:|`回溯`|[1.回溯](https://leetcode.cn/submissions/detail/441400199/)<br/>[2.]()|$O(3^4*n)$<br/>$O()$ | $O(1)$<br/>$O()$||回溯还是先自己画出树，然后可以容易分析出时间复杂度和空间复杂度，甚至剪枝。回溯解法的时间复杂度容易忽略要将结果写入结果数组，这也会花时间。本题这里给出的解法没有任何剪枝操作，是最朴素的版本。|
