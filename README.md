@@ -47,7 +47,7 @@
 # :evergreen_tree: 贪心
 |**Problem**|**Difficulty**|**Tags***|**Methods****|**Time**|**Space**|**FM**|**Note**|
 | --------- | :----------: |---------| ---------- | :-----: | :-----: | :--: | ------ |
-|[]()|:star2:|`二叉树`|[1.]()<br/>[2.]()|$O()$<br/>$O()$ | $O()$<br/>$O()$|||
+|[455.分发饼干](https://leetcode.cn/problems/assign-cookies/)|:star2:|`贪心`|[1.贪心](https://leetcode.cn/submissions/detail/441732467/)<br/>[2.]()|$O(mlogm + nlogn)$<br/>$O()$ | $O(logm+logn)$<br/>$O()$||方法1是自己想的，每次将最大的饼干分发给胃口最大的孩子，下一次分发的时候从剩下的孩子开始分发，分发的时间复杂度为 $O(m+n)$ ，空间复杂度为 $O(1)$ ，排序的时间复杂度为 $O(mlogm+nlogn)$ ，空间复杂度为: $O(logm+logn)$|
 
 
 # :cactus: 回溯
