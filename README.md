@@ -48,6 +48,8 @@
 |**Problem**|**Difficulty**|**Tags***|**Methods****|**Time**|**Space**|**FM**|**Note**|
 | --------- | :----------: |---------| ---------- | :-----: | :-----: | :--: | ------ |
 |[455.分发饼干](https://leetcode.cn/problems/assign-cookies/)|:star2:|`贪心`|[1.贪心](https://leetcode.cn/submissions/detail/441732467/)<br/>[2.]()|$O(mlogm + nlogn)$<br/>$O()$ | $O(logm+logn)$<br/>$O()$||方法1是自己想的，每次将最大的饼干分发给胃口最大的孩子，下一次分发的时候从剩下的孩子开始分发，分发的时间复杂度为 $O(m+n)$ ，空间复杂度为 $O(1)$ ，排序的时间复杂度为 $O(mlogm+nlogn)$ ，空间复杂度为: $O(logm+logn)$|
+|[376.摆动序列](https://leetcode.cn/problems/wiggle-subsequence/)|:star2::star2:|`贪心`|[1.贪心](https://leetcode.cn/problems/wiggle-subsequence/submissions/)<br/>[2.]()|$O(n)$<br/>$O()$ | $O(1)$<br/>$O()$||本题最重要的两个需要考虑的地方：1. 最后一个元素默认为摆动; 2. 单调坡会破坏最初的规则. 所以主要是思考的思路要对，思路就是：将非摆动点去掉，然后再数剩余的,  这样思考的话就容易理解，为啥平坡和单调坡对结果影响不同, 为了防止单调坡会破坏规则，使用两个变量来存储前一个摆动的左右|
+
 
 
 # :cactus: 回溯
