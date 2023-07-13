@@ -49,6 +49,7 @@
 | --------- | :----------: |---------| ---------- | :-----: | :-----: | :--: | ------ |
 |[455.分发饼干](https://leetcode.cn/problems/assign-cookies/)|:star2:|`贪心`|[1.贪心](https://leetcode.cn/submissions/detail/441732467/)<br/>[2.]()|$O(mlogm + nlogn)$<br/>$O()$ | $O(logm+logn)$<br/>$O()$||方法1是自己想的，每次将最大的饼干分发给胃口最大的孩子，下一次分发的时候从剩下的孩子开始分发，分发的时间复杂度为 $O(m+n)$ ，空间复杂度为 $O(1)$ ，排序的时间复杂度为 $O(mlogm+nlogn)$ ，空间复杂度为: $O(logm+logn)$|
 |[376.摆动序列](https://leetcode.cn/problems/wiggle-subsequence/)|:star2::star2:|`贪心`|[1.贪心](https://leetcode.cn/problems/wiggle-subsequence/submissions/)<br/>[2.动归](https://leetcode.cn/problems/wiggle-subsequence/submissions/)|$O(n)$<br/>$O(n)$ | $O(1)$<br/>$O(n)$||本题最重要的两个需要考虑的地方：1. 最后一个元素默认为摆动; 2. 单调坡会破坏最初的规则. 所以主要是思考的思路要对，思路就是：将非摆动点去掉，然后再数剩余的,  这样思考的话就容易理解，为啥平坡和单调坡对结果影响不同, 为了防止单调坡会破坏规则，使用两个变量来存储前一个摆动的左右. 动归需要维护up和down两个变量，建议直接看官方解释, 改进的话可以将原本的up和down列表改为变量，减少空间复杂度。|
+|[53.最大子数组和](https://leetcode.cn/problems/maximum-subarray/)|:star2::star2:|`贪心`|[1.暴力](https://leetcode.cn/submissions/detail/446735065/)</br> [2.贪心](https://leetcode.cn/submissions/detail/446754696/)<br/>[2.动归]()|$O(n^2)$<br/>$O(n)$<br/>$O(n)$ | $O(1)$<br/>$O(1)$<br/>$O(n)$||贪心方法主要是思想，没有固定模板，比如先做出来暴力解法，然后贪心思路就用于优化。暴力解法就是如何遍历所有的子字符串，按顺序定字符串的起点，然后按顺序定终点。贪心思路就一点：一旦发现子串总和<=0，则从下一个元素开始遍历，我按照这个思路自己实现的是双重循环的格式，但是其实复杂度只有$O(n)$，参考答案才知道等价于一重循环。|
 
 
 
